@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import './header.css'
+import logo from '../assets/Logo.png'
 
 const Header = () => {
   const [dateTime, setDateTime] = useState('');
@@ -34,7 +35,7 @@ const Header = () => {
        <header className="header">
       <div className="top-bar">
         <div className="logo-section">
-          <img src="/src/assets/Logo.png.png" alt="ANT Logo" className="logo" />
+        <img src={logo} alt="ANT Logo" className="logo" />
           <div className="tagline">WE MAKE TRAVEL JOYFUL</div>
         </div>
 
