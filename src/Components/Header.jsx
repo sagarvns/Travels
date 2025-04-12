@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import './header.css'
-import logo from '../assets/Logo.png'
+import logo from '../../public/images/Logo.png.png';
 
 const Header = () => {
   const [dateTime, setDateTime] = useState('');
