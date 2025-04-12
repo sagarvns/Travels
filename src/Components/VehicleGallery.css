@@ -90,3 +90,27 @@
 .get-price:hover {
   background: #303f9f;
 }
+
+.vehicle-gallery-wrapper {
+  padding: 2rem 1rem;
+  background-color: #f5f7fa;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f97316;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bus-subheading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+}

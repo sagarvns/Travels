@@ -51,13 +51,13 @@ const Header = () => {
           <div className="email">sales@anttravels.com</div>
         </div>
 
-        {/* Hamburger Icon */}
+       
         <div className="menu-icon" onClick={toggleMenu}>
           ☰
         </div>
       </div>
 
-      {/* Navbar */}
+   
       <nav className={`nav-bar ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
           {["HOME", "BUS TICKET", "BUS HIRE", "CAR HIRE", "TRAVELLER HIRE", "GALLERY", "ONLINE PAYMENT", "SEND ENQUIRY", "CONTACT US"].map(link => (

@@ -76,22 +76,36 @@ const vehicleServices = [
 
 const VehicleGallery = () => {
   return (
-    <div className="vehicle-gallery">
-      {vehicleServices.map((item, index) => (
-        <div className="vehicle-card" key={index}>
-          <img src={item.image} alt={item.title} className="vehicle-image" />
-          <div className="vehicle-content">
-            <h3 className="vehicle-title">{item.title}</h3>
-            <p className="vehicle-company">{item.company}</p>
-            <p className="vehicle-location">{item.location}</p>
-            <p className="vehicle-price">{item.price}</p>
-            <button className="view-number">
-              📞 <span>View Number</span>
-            </button>
-            <button className="get-price">Get Best Price</button>
+    <div className="vehicle-gallery-wrapper">
+      <h2 className="gallery-heading">Best Tourist Transport Operator in Noida</h2>
+      <div className="vehicle-gallery">
+        {vehicleServices.map((item, index) => (
+          <div className="vehicle-card" key={index}>
+            <img src={item.image} alt={item.title} className="vehicle-image" />
+            <div className="vehicle-content">
+              <h3 className="vehicle-title">{item.title}</h3>
+              <p className="vehicle-company">{item.company}</p>
+              <p className="vehicle-location">{item.location}</p>
+              <p className="vehicle-price">{item.price}</p>
+              <button className="view-number">
+                📞 <span>View Number</span>
+              </button>
+              <button className="get-price">Get Best Price</button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
+      <p className="bus-subheading">
+      Looking for the best tourist transport operator in Noida? Your search ends here! 
+        We offer a wide range of well-maintained and fully equipped vehicles, including 
+        luxury buses, tempo travellers, and executive coaches — perfect for local sightseeing, 
+        outstation tours, and corporate travel. Our services focus on comfort, punctuality, 
+        and affordability, making us the top choice for families, tourists, and businesses alike. 
+        Whether it’s a weekend getaway or a long road trip, travel in style and peace with our expert 
+        drivers and reliable support team.
+  </p>
+
     </div>
   );
 };
