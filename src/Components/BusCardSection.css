@@ -1,0 +1,62 @@
+.bus-section {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bus-card {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+}
+
+.bus-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.stars {
+  color: #f59e0b;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.bus-card h3 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bus-card p {
+  font-size: 0.95rem;
+  padding: 0 1rem;
+  color: #444;
+}
+
+.view-btn {
+  background-color: #f59e0b;
+  color: #fff;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #d97706;
+}
