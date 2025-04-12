@@ -53,7 +53,9 @@ const Header = () => {
       <nav className="nav-bar">
         <ul>
           {["HOME", "BUS TICKET", "BUS HIRE", "CAR HIRE", "TRAVELLER HIRE", "GALLERY", "ONLINE PAYMENT", "SEND ENQUIRY", "CONTACT US"].map(link => (
-            <li key={link}><a href="#">{link}</a></li>
+            <li key={link}><a href="/">{link}</a></li>
+            
+
           ))}
         </ul>
       </nav>
