@@ -46,7 +46,7 @@
 }
 
 .view-btn {
-  background-color: #f59e0b;
+  background-color: #f97316;
   color: #fff;
   border: none;
   margin: 1rem 0;
@@ -58,5 +58,5 @@
 }
 
 .view-btn:hover {
-  background-color: #d97706;
+  background-color:  #f97316;
 }

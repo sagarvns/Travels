@@ -1,10 +1,11 @@
-import React, { useState,useEffect } from 'react'
-import './header.css'
+import React, { useState, useEffect } from 'react';
+import './header.css';
 import logo from '../../public/images/Logo.png.png';
 
 const Header = () => {
   const [dateTime, setDateTime] = useState('');
   const [greeting, setGreeting] = useState('');
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const updateDateTime = () => {
@@ -30,12 +31,13 @@ const Header = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const toggleMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
+
   return (
-    <>
-       <header className="header">
+    <header className="header">
       <div className="top-bar">
         <div className="logo-section">
-        <img src={logo} alt="ANT Logo" className="logo" />
+          <img src={logo} alt="ANT Logo" className="logo" />
           <div className="tagline">WE MAKE TRAVEL JOYFUL</div>
         </div>
 
@@ -48,21 +50,23 @@ const Header = () => {
           <div className="toll">Toll free : <span>18001027408</span></div>
           <div className="email">sales@anttravels.com</div>
         </div>
+
+        {/* Hamburger Icon */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          ☰
+        </div>
       </div>
 
-      <nav className="nav-bar">
+      {/* Navbar */}
+      <nav className={`nav-bar ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
           {["HOME", "BUS TICKET", "BUS HIRE", "CAR HIRE", "TRAVELLER HIRE", "GALLERY", "ONLINE PAYMENT", "SEND ENQUIRY", "CONTACT US"].map(link => (
-            <li key={link}><a href="/">{link}</a></li>
-            
-
+            <li key={link}><a href="#">{link}</a></li>
           ))}
         </ul>
       </nav>
     </header>
-    
-    </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
